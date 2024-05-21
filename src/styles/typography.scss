@@ -1,0 +1,55 @@
+@use "./global";
+
+%titleDefault {
+    color: global.$color-gray-0;
+    font-family: global.$font-primary;
+    font-weight: 700;
+}
+
+%textDefault {
+    color: global.$color-gray-1;
+    font-family: global.$font-primary;
+    font-weight: 400;
+}
+
+.title {
+    @extend %titleDefault;
+    text-align: center;
+
+    &.one {
+        font-size: clamp(0.9rem, -0.6rem + 7.5vw, 1.125rem);
+        line-height: 1.77656rem;
+    }
+    a &.two {
+        font-size: 1rem;
+        line-height: 1.64963rem;
+    }
+
+    &.three {
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+    }
+}
+
+.headline {
+    @extend %textDefault;
+    font-size: 0.75rem;
+    line-height: 1.39588rem;
+
+    &.bold {
+        font-weight: 700;
+    }
+}
+
+.paragraph {
+    @extend %textDefault;
+    font-size: 1rem;
+    line-height: 1.14206rem; /* 114.206% */
+}
+
+.helper {
+    position: absolute;
+    bottom: -0.8rem;
+    @extend %textDefault;
+    font-size: 0.6345rem;
+}

@@ -1,0 +1,13 @@
+.headerContent {
+    width: 100%;
+    max-width: 23rem;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+        width: clamp(6rem, 1.5rem + 24vw, 7.5rem);
+        height: clamp(1rem, -0.667rem + 8.333vw, 1.25rem);
+    }
+}

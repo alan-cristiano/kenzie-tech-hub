@@ -1,0 +1,22 @@
+$color-primary: #ff577f;
+$color-primary-focus: #ff427f;
+$color-primary-negative: #59323f;
+
+$color-gray-4: #121214;
+$color-gray-3: #212529;
+$color-gray-2: #343b41;
+$color-gray-1: #868e96;
+$color-gray-0: #f8f9fa;
+$color-white: #ffffff;
+
+$color-success: #3fe864;
+$color-negative: #e83f5b;
+
+$font-primary: "Inter", sans-serif;
+
+body {
+    box-sizing: border-box;
+    max-width: 100%;
+    height: 100vh;
+    background-color: $color-gray-4;
+}

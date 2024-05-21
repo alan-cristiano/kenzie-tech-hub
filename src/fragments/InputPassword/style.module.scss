@@ -1,0 +1,64 @@
+@use "../../styles/global";
+
+.inputContent {
+    position: relative;
+    color: global.$color-gray-0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+
+    label {
+        font-family: global.$font-primary;
+        font-size: clamp(0.65rem, -0.35rem + 5vw, 0.8rem);
+        font-weight: 400;
+    }
+
+    div {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 0.25rem;
+
+        input {
+            width: 100%;
+            height: clamp(2.4rem, -1.6rem + 20vw, 3rem);
+            padding-inline: 1rem;
+            border-radius: 0.25rem;
+            border: 1px solid transparent;
+
+            font-family: global.$font-primary;
+            font-size: clamp(0.8rem, -0.533rem + 6.667vw, 1rem);
+            font-weight: 400;
+            color: global.$color-gray-0;
+            background-color: global.$color-gray-2;
+
+            &::placeholder {
+                color: global.$color-gray-1;
+            }
+
+            &:focus {
+                border-color: global.$color-gray-0;
+
+                &::placeholder {
+                    color: global.$color-gray-0;
+                }
+            }
+        }
+
+        button {
+            position: absolute;
+            right: 1px;
+            top: 1px;
+            height: calc(100% - 2px);
+            padding: 0.5rem;
+            border-radius: 0.25rem;
+            color: global.$color-gray-1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: global.$color-gray-2;
+        }
+    }
+}

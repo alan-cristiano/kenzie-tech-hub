@@ -1,0 +1,19 @@
+@use "../../styles/global";
+
+.techList {
+    width: 100%;
+    padding: 1.4rem;
+    border-radius: 0.25rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+
+    background-color: global.$color-gray-3;
+}
+
+@media (max-width: 350px) {
+    .techList {
+        padding: 1rem;
+    }
+}

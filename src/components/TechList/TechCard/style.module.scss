@@ -1,0 +1,46 @@
+@use "../../../styles/global";
+
+.techCard {
+    width: 100%;
+    padding: 1.4rem;
+    border-radius: 0.25rem;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+
+    background-color: global.$color-gray-4;
+
+    transition: background-color 200ms;
+
+    &:hover {
+        background-color: global.$color-gray-2;
+    }
+
+    div {
+        display: flex;
+        gap: 1rem;
+
+        button {
+            color: #ffffff;
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    .techCard {
+        padding: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+
+        div {
+            width: 100%;
+            justify-content: space-between;
+
+            span {
+                flex-grow: 1;
+            }
+        }
+    }
+}
