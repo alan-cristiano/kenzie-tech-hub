@@ -2,6 +2,8 @@
 
 ## Acesso ao projeto
 
+https://kenzie-tech-hub-alan-cristiano.vercel.app/
+
 ## Descrição
 
 -   Projeto front-end desenvolvido em React como Single Page Application que possibilita o registro de habilidades técnicas do desenvolvedor de software cadastrado na plataforma;
