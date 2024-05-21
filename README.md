@@ -1,4 +1,4 @@
-# Tech Hub
+# Kenzie Tech Hub
 
 ## Acesso ao projeto
 
